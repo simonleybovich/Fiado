@@ -14,22 +14,15 @@ Regla dura: `domain/` y `application/` no importan nada de Nest, Telegraf, Mongo
 
 ## Variables de entorno
 
-No hay `.env.example` en el repo porque los permisos de este entorno bloquean escribir archivos `.env.*`. Creá tu propio `.env` en la raíz con estas claves:
+Ver `.env.example`. Resumen:
 
-```
-PORT=3000
-
-MONGO_URI=mongodb://localhost:27017/fiado
-
-TELEGRAM_BOT_TOKEN=
-# URL pública del servicio, SIN el path del webhook (se agrega /telegram/webhook solo)
-TELEGRAM_WEBHOOK_URL=https://fiado.example.com
-
-OPENCODE_API_KEY=
-# Confirmá el id exacto contra GET https://opencode.ai/zen/v1/models con tu key,
-# el catálogo cambia de tanto en tanto.
-OPENCODE_MODEL=
-```
+- `PORT` — puerto HTTP (default 3000).
+- `MONGO_URI` — connection string de Mongo.
+- `TELEGRAM_BOT_TOKEN` — token del bot (BotFather).
+- `TELEGRAM_WEBHOOK_URL` — URL pública del servicio, sin el path del webhook (se agrega `/telegram/webhook` solo).
+- `OPENCODE_API_KEY` — key de OpenCode Zen/Go.
+- `OPENCODE_MODEL` — id exacto del modelo. Confirmalo contra `GET https://opencode.ai/zen/v1/models` (Zen) o la doc de Go — el catálogo cambia de tanto en tanto, no asumas un valor fijo.
+- `OPENCODE_BASE_URL` — opcional. Por default pega contra Zen (`https://opencode.ai/zen/v1`). Si tenés saldo/cuota en OpenCode Go en vez de Zen, poné `https://opencode.ai/zen/go/v1` acá (misma API key, billetera/cuota distinta, otro catálogo de modelos).
 
 ## Desarrollo
 

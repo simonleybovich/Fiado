@@ -45,6 +45,7 @@ import { TelegramUpdate } from './telegram.update';
         new OpencodeDebtParserAdapter(
           config.getOrThrow<string>('opencode.apiKey'),
           config.getOrThrow<string>('opencode.model'),
+          config.get<string>('opencode.baseUrl'),
         ),
       inject: [ConfigService],
     },
