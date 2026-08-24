@@ -27,3 +27,6 @@ npm-debug.log*
 
 # local tooling cache
 .atl/
+
+# planning notes with deploy-specific details, kept local only
+/plan-bot-deudas-nest.md

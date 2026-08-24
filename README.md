@@ -2,8 +2,6 @@
 
 Bot de Telegram que registra quién te debe plata, cuánto y por qué. NestJS + arquitectura hexagonal + MongoDB. El texto libre se parsea a datos estructurados con un LLM vía OpenCode Zen (endpoint OpenAI-compatible).
 
-Ver `plan-bot-deudas-nest.md` para el plan de proyecto completo.
-
 ## Arquitectura
 
 Hexagonal por contexto (`src/contexts/debts`):

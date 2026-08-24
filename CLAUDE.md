@@ -1,6 +1,6 @@
 # Fiado — convenciones del proyecto
 
-Bot de Telegram que registra deudas informales. NestJS + arquitectura hexagonal + MongoDB. Plan completo en `plan-bot-deudas-nest.md`.
+Bot de Telegram que registra deudas informales. NestJS + arquitectura hexagonal + MongoDB.
 
 ## Regla dura de arquitectura
 
